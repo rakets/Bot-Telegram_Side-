@@ -23,10 +23,23 @@
         </dependency>
 
         <!-- TelegramBots Library -->
+<!--        <dependency>-->
+<!--            <groupId>org.telegram</groupId>-->
+<!--            <artifactId>telegrambots</artifactId>-->
+<!--            <version>6.5.0</version>-->
+<!--        </dependency>-->
+
+<!--        Long Polling dependency-->
         <dependency>
             <groupId>org.telegram</groupId>
-            <artifactId>telegrambots</artifactId>
-            <version>6.5.0</version>
+            <artifactId>telegrambots-longpolling</artifactId>
+            <version>8.0.0</version>
+        </dependency>
+        <!-- Core Client dependency -->
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots-client</artifactId>
+            <version>8.0.0</version>
         </dependency>
 
         <!-- Logging (optional, for debugging)  Скорее всего не будем использовать-->
@@ -35,6 +48,13 @@
             <artifactId>slf4j-api</artifactId>
             <version>2.0.9</version>
         </dependency>
+<!--        реализация логгера Logback (рекомендуется, поскольку это современная и быстрая реализация для SLF4J-->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.4.14</version>
+        </dependency>
+
     </dependencies>
 
     <build>
